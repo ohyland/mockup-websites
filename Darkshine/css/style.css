@@ -1,0 +1,262 @@
+/*UNIVERSAL RESET*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, del, dfn, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/*UNIVERSAL ELEMENTS*/
+body {
+	background-color:#000;
+	color:#fff;
+	font-family: sans-serif;
+	padding: 2% 2% 0 2%;
+	font-size:2.6vw;
+}
+h1 {
+	font-family: "Times New Roman", Times, serif;
+	border-bottom: 1px solid white;
+	padding: 2% 0;
+	font-size: 5.3vw;
+}
+h2 {
+	text-transform: uppercase;
+	padding-bottom:2%;
+	font-size: 3.5vw;
+}
+p {
+	padding: 2% 0px;
+}
+a:link, a:visited {
+	color:#fff;
+	text-decoration: none;
+}
+header {
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+/*MOBILE MENU*/
+.mobile-menu div {
+	width: 35px;
+	height: 4px;
+	background-color: #fff;
+	margin: 5px 0;
+}
+
+/*NAV*/
+nav{
+	display: none;
+	width: 100%;
+}
+
+nav ul {
+	width: 100%;
+	padding: 2% 0;
+	display: flex;
+	flex-direction: column;
+}
+nav li {
+	text-align: center;
+	padding: 0.5% 0;
+	border-bottom: 1px solid rgb(240, 239, 189);
+}
+
+/*IMAGE GALLERY*/
+.showcase {
+	display: none;
+}
+.showcase.active {
+	display: block;
+}
+#images-gallery {
+	display: flex;
+	flex-direction: column;
+}
+.thumbnail-images p {
+	display:none;
+}
+.large-images {
+	position: relative;
+}
+.large-images p {
+	display:none;
+}
+.large-images > h1 {
+	display: none;
+}
+.large-images img + p {
+	font-size: 1.6vw;
+    padding-bottom: 0;
+	font-weight:bold;
+}
+.large-images img {
+	display: block;
+	width:100%;
+}
+.thumbnail-images {
+	display:flex;
+	padding-top: 5%;
+	width:100%;
+}
+.thumbnail-images img {
+	display: block;
+	width: 20%;
+	border: 1px solid white;
+	box-sizing: border-box;
+}
+
+/*TAGLINE - desktop only*/
+.tagline-paragraph {
+	background-color: rgb(35, 35, 35);
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.3em;
+	padding:2% ;
+	margin-top:3%;
+	display:none;
+}
+
+/*MAIN - SECTIONS & HEADER */
+main header {
+	flex-direction: column;
+}
+.section-inner-wrapper .more-info {
+	color: lightslategray;
+	text-transform: capitalize;
+	padding-bottom: 2%;
+	cursor: pointer;
+}
+.section-inner-wrapper {
+	display:flex;
+}
+.section-inner-wrapper section { 
+	flex-direction: column;
+	width: 100%;
+}
+div.section-image {
+	width:45%;
+}
+.section-image img {
+	width:100%;
+}
+.grouped-sections {
+	border-left: 1px solid white;
+	width: 55%;
+	padding: 0% 4% 2% 2%;
+    margin-left: 2%;
+}
+.grouped-sections section p:nth-child(3) {
+	display: none;
+}
+
+/*FOOTER*/
+footer {	
+	background-color: rgb(35, 35, 35);
+	text-align: center;
+	padding: 1.5%;
+}
+footer p {
+	padding:0;
+}
+
+/*------TABLET- Media Query------*/
+
+@media only screen and (min-width: 500px) {
+	body {
+		font-size:.9em;
+	}
+	h1 {
+		font-size:4vw;
+	}
+}
+/*------DESKTOP - Media Query------*/
+
+@media only screen and (min-width: 850px) {
+
+	/*UNIVERSAL*/
+	#wrapper {
+		max-width:85%;
+		margin:auto;
+	}
+	body {
+		font-size: 1.19vw;
+	}
+	h1 {
+		font-size: 2.9vw;
+	}
+	h2 {
+		font-size: 1.8vw;
+	}
+
+	/*MOBILE-MENU*/
+	.mobile-menu {
+		display:none;
+	}
+
+	/*NAV*/
+	nav {
+		display: block;
+		flex-basis: 43%;
+		font-size: 1.2vw;
+	}
+	nav ul {
+		flex-direction:row;
+		justify-content: space-between;
+	}
+	nav li {
+		border: none;
+	}
+
+	/*IMAGES GALLERY*/
+	#images-gallery {
+		display:flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.large-images p {
+		display:block;
+		padding-left:3%;
+	}
+	.large-images {
+		width: 50%;
+	}
+	.large-images img{
+		width: 90%;
+	}
+	div.large-images > h1 {
+		font-size: 1.8vw;
+		border: none;
+		padding-left: 3%;
+		font-family: sans-serif;
+		display: block;
+	}
+	.thumbnail-images img{
+		display:block;
+		flex-basis: 30%;
+	}
+	.thumbnail-images p {
+		display: block;
+		flex-basis: 49%;
+		margin-left: 3%;
+	}
+	.thumbnail-images {
+		padding-top: 0;
+		width: 39%;
+		flex-wrap: wrap;
+		align-items:flex-start;
+	}
+	.tagline-paragraph {
+	display:block;
+	}
+
+	/*MAIN - SECTIONS & HEADER */
+	.section-outer-wrapper {
+		display: flex;
+		flex-direction: row;
+	}
+
+}
