@@ -1,0 +1,97 @@
+/*UNIVERSAL RESET*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, del, dfn, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li{
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+}
+/*UNIVERSAL ELEMENTS*/
+body{
+	background-color:#F5F5DC;
+	font-size:100%;}
+h1{
+	font-size:450%;
+	padding:25px 0;}
+h2, h3{
+	line-height: 150%;
+	padding:15px;
+}
+p{
+	padding:5px;
+}
+/*ANCHOR LINKS*/
+a{
+	text-decoration:none;
+	color:white;
+	font-size:120%; 
+	font-family:sans-serif;
+	}
+/*CONTAINER*/
+#container{
+	width:980px;
+	background: url("../images/basin_bg.jpg") no-repeat #b4c4ba;
+	margin:20px auto;
+}
+/*NAVIGATION*/
+nav a{
+	background-color:#000;
+	padding:10px 50px;
+	display:inline-block;
+	border-radius:10px;
+}
+li{
+	display:inline;
+}
+
+/*HEADER*/
+header{
+	text-align:center;
+}
+
+/*SIDEBAR & SECTION*/
+aside, section{
+	border-radius:20px;
+	padding:10px;
+	margin-top:25px;
+	margin-bottom:25px;
+	min-height:850px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+/*SECTION*/
+aside{
+	width:22%;
+	float:right;
+	margin-right:25px;
+	padding-bottom:160px;
+	background: #fff url(../images/sake.jpg) no-repeat bottom;
+}
+
+/*SIDEBAR*/
+section{
+	width:65%;
+	float:left;
+	padding-top:120px;
+	margin-left:25px;
+	background: #fff url(../images/chef.jpg) no-repeat;
+}
+
+/*FLOATED IMAGES*/
+p > img {
+	padding:8px;
+}
+p:nth-child(2) > img{
+	float:right;
+}
+p:nth-child(6) > img{
+	float:left;
+}
+/*FOOTER*/
+footer{
+	clear:both;
+	background:#000;
+	color:#fff;
+	padding-left:10px;
+}
+/*MOBILE ICON*/
+#mobileicon{
+	display:none;
+}

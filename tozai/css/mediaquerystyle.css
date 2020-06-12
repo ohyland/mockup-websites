@@ -1,0 +1,90 @@
+/*MEDIA QUERY - tablet*/
+
+@media screen and (max-width:768px){
+	/* UNIVERSAL*/
+	#container{
+		width:93%;
+		background:url(../images/basin_bg_tab.jpg) no-repeat #b4c4ba;
+	}
+	
+	/*H1*/
+	h1{
+		font-size:320%;
+	}
+	/*NAV*/
+	nav a{
+		padding:10px 20px;
+	}
+	/*SIDEBAR/SECTION*/
+	section, aside{
+		width:90%;
+		float:none;
+		margin:15px auto;
+	}
+	/*IMAGES IN SECTION*/
+	section img{
+		min-width:50%;
+		margin:auto;
+	}
+	/*SIDEBAR*/
+	aside{
+		background:url(../images/sake_tab.jpg) #fff no-repeat 100% 100%;
+		padding-bottom: 20px;
+		min-height:150px;
+	}
+	aside p {
+		width:45%;
+	}
+
+}
+	
+/*MEDIA QUERY - mobile*/
+@media screen and (max-width:515px){
+	/* UNIVERSAL*/
+	#container{
+		background-image:url(../images/basin_bg_phone.jpg) no-repeat;
+		
+	}
+	/*H1*/
+	h1{
+		padding-bottom:5px;
+		}
+	/*NAV*/
+	nav{
+		display:none;
+	}
+	/*IMAGES IN SECTION*/
+	section img{
+		width:95%;
+		float:none;
+		margin:auto;
+	}
+	aside{
+		background-position: 210% 100%;
+	}
+	
+	aside p {
+		width:57%;
+	}
+	
+	/*MOBILE ICON*/
+	#mobileicon{
+		display:block;
+		width:35px;
+		height:39px;
+		float:right;
+		margin-right:10px;
+		margin-top:10px;
+		font-size:2.5em;
+		position:absolute;
+		top:3%;
+		right:5%;
+		}
+	
+	#mobileicon:hover{
+	cursor:pointer;
+	}
+}
+	
+		
+	

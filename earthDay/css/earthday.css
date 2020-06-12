@@ -1,0 +1,165 @@
+/*UNIVERSAL ZERO DOWN*/
+*{
+	margin:0;
+	padding:0;
+}
+
+/*CONTAINER DIV - for all content*/
+#container{
+	height:1213px;/*remove after..*/
+	width:940px;
+	margin:auto;
+}
+/*BODY*/
+body{
+	font: 0.875em/1.125 Garamond, Georgia, Times, "Times New Roman", serif;
+	background:rgb(237,246,247);
+}
+
+/*TOP NAVIGATION*/
+#nav {
+	background:rgb(56,78,128);/*navy*/
+	height:51px;
+	}
+#nav ul{
+	list-style-type:none;
+	float:right;
+}
+#nav li{
+	float:left;
+	padding: 15px;
+}
+
+#nav a:link, #nav a:visited {  
+	text-decoration:none;
+	color:#fff;/*white*/
+}
+
+#nav a:hover, #nav a:focus{
+	color: rgb(148,218,244); /*light blue- on hover*/
+}
+
+/*HEADER*/
+#header {
+	height:201px;
+	background:url(../images/headerimg.jpg);
+}
+
+#header h1{
+	padding: 50px 0px 0px 50px;
+	font-size:3.625em;
+}
+
+#header h1 a:link, #header h1 a:visited{
+	color: #384e80;
+	text-decoration:none;
+}
+#header h1 a:hover, #nav h1 a:focus{
+    text-decoration: underline; /*underline on hover and focus*/
+}
+/*MAIN CONTENT*/
+#main{
+	overflow:hidden;
+	background: url(../images/colbg.png);
+}
+
+/****COLUMNS in MAIN*/
+
+/*COLUMN 1*/
+
+.col1{
+	width:447px;
+	float:left;
+	padding:20px;
+}
+
+.col1 h2 a:link, .col1 h2 a:visited {
+	color:#384e80;/*navy*/
+	text-decoration:none;
+}
+
+.col1 h2 a:hover, .col1 h2 a:focus {
+	text-decoration:underline;
+}
+ .col1 img{
+	float:left;
+	padding-right: 20px;
+}
+
+.col1 h2{
+	clear:both;
+}
+
+
+
+/*COLUMN 2 and 3*/
+.col2and3{
+	width:184px;
+	float:left;
+	padding:20px;
+	
+}
+.col2and3 ul {
+	list-style-type:none;	
+}
+
+.col2and3 li, .footercol li{
+	background: url(../images/arrow.gif) no-repeat;
+	background-position: 0% 50%;
+	padding:0px 0px 0px 20px;
+}
+
+.col2and3 h2, .col1 h2{
+	border-bottom: 1px dotted #DCDCDC;
+	padding:13px 0px 13px 0px;
+	margin-bottom: 15px;
+}
+
+.col2and3 li a:link,.col2and3 li a:visited{
+	text-decoration:none;
+	color:#384e80;
+}
+.col2and3 li a:hover,.col2and3 li a:focus{
+	text-decoration:underline;
+	color:#5f822f;
+}
+
+.col2and3 h2{
+	font-size:1.125em;
+	color:#5f822f;
+}
+
+/*FOOTER*/
+
+#footer {
+	overflow:hidden;
+	padding:20px;
+	background: rgb(56,78,128);
+}
+.footercol{
+	width:225px;
+	float:left;
+}
+
+.footercol ul{
+	list-style-type:none;
+}
+
+.footercol li a:link,.footercol li a:visited{
+	text-decoration:none;
+	color:rgb(237,246,247);
+}
+.footercol li a:hover,.footercol li a:focus{
+	text-decoration:underline;
+	color:#5f822f;
+}
+
+.footercol h2{
+	font-size:1.125em;
+	color: rgb(237,246,247);
+	padding:0px 0px 17px 0px;
+}
+.footercol p{
+	color:rgb(237,246,247);
+}
+
