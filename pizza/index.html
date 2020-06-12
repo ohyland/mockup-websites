@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/mediaquerystyle.css"/>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pizza HTML5</title>
+	<!--Pizza HTML5 
+	By Olivia Hyland, 2020
+	-->
+</head>
+<body>
+<!--MAIN START-->
+	<div class="main-container">
+<!--MAIN END-->
+<!--HEADER START-->
+		<header>
+			<div class="logo">
+				<h1>Responsive Web Design</h1>
+				<p>Way Better Than Unresponsive Web Design</p>
+				<div id="mobileicon">
+				&#9776;
+				</div>
+			</div>
+			
+<!--HEADER END-->			
+<!--NAV START-->
+			<!--should probably do in a <ul> for future -->
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+<!--NAV START-->
+			<div class="tagline">
+				<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> Sed porttitor efficitur purus sed scelerisque. Nulla elit est, bibendum at fermentum vel, faucibus sed quam. Praesent a tortor id leo luctus pellentesque vel hendrerit mi.</p>
+			</div>
+		</header>
+<!--HEADER END-->
+
+<!--MAIN START-->
+		<div class="main">
+			<article class="article1">
+				<h2>Lorem ipsum dolor sit amet</h2>
+					<div class="paragraph">
+						<img src="images/pizza.jpg" alt="Image-of-pizza"/>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor efficitur purus sed scelerisque. Nulla elit est, bibendum at fermentum vel, faucibus sed quam.  Aenean pellentesque imperdiet justo, vel bibendum mauris eleifend vel. Sed vel mollis neque. Nunc malesuada enim et orci dictum, quis elementum turpis ullamcorper. Nunc lacinia imperdiet tincidunt.
+						</p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor efficitur purus sed scelerisque. Nulla elit est, bibendum at mollis neque. Nunc malesuada enim et orci dictum, quis elementum turpis ullamcorper. Nunc lacinia imperdiet tincidunt.
+						</p>
+						<p><a href="#">Read More...</a></p>
+					</div>
+			</article>
+		
+			<article class="article2">
+				<h2>Lorem ipsum dolor sit amet</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor efficitur purus sed scelerisque. Nulla elit est, bibendum at fermentum vel, faucibus sed quam. Praesent a tortor id leo luctus pellentesque vel hendrerit mi. Pellentesque cursus tellus dolor, vitae imperdiet mauris condimentum vitae. Quisque in ipsum nec mi dictum varius. Aenean pellentesque imperdiet justo, vel bibendum mauris eleifend vel. Sed vel mollis neque. Nunc malesuada enim et orci dictum, ullamcorper. Nunc lacinia imperdiet tincidunt.</p>
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor efficitur purus sed scelerisque. Nulla elit est, bibendum at fermentum vel, faucibus sed quam. Praesent a tortor id leo luctus pellentesque vel hendrerit mi. Pellentesque cursus tellus dolor, vitae imperdiet mauris condimentum vitae. Quisque in ipsum nec mi dictum varius. Aenean pellentesque imperdiet justo, vel bibendum mauris eleifend vel. Sed vel mollis neque. Nunc malesuada enim et orci dictum, quis elementum turpis ullamcorper. Nunc lacinia imperdiet tincidunt.</p>
+				<p><a href="#">Read More...</a></p>
+			</article>
+		</div>
+<!--MAIN END-->
+<!--SECTION TWO END-->	
+
+<!--ASIDE ONE START-->
+		<div class="sidebar">
+			<aside>
+				<h2>About</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor efficitur purus sed scelerisque. Nulla elit est, bibendum at fermentum vel, faucibus sed quam..</p>
+			</aside>
+<!--ASIDE ONE END-->
+
+<!--ASIDE TWO START-->
+			<aside>
+				<h2>Recent</h2>
+				<ul>
+					<li><a href="#">Lorem ipsum ipsum dolor sit amet</a></li>
+					<li><a href="#">consectetur adipiscing elit</a></li>
+					<li><a href="#">consectetur adipiscing tetur elit</a></li>
+					<li><a href="#">Nulla elit est, bibendum bibendum at</a></li>
+					<li><a href="#">Praesent a tortor</a></li>
+				</ul>	
+			</aside>
+<!--ASIDE TWO END-->
+		</div>
+<!--FOOTER START-->
+		<footer>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			<p>&copy; Copyright. All Rights Reserved</p>
+		</footer>
+<!--FOOTER END-->
+	</div>
+<!--SCRIPT START-->
+	<script src='js/jquery.js'></script>
+	
+	<script>
+		$("#mobileicon").click(function(){
+			$("nav").slideToggle();
+		});
+	</script>
+<!--SCRIPT END-->	
+</body>
+</html>
